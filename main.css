@@ -1,3 +1,31 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  
+font-family: 'Lexend Deca', sans-serif;
+}
+
+#navTitle {
+  padding-left: 24px;
+}
+
 .cover {
   background-color: #000;
+}
+
+.featured {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featured img {
+  width: 300px;
+  height: 300px;
+  margin: 2px;
 }
