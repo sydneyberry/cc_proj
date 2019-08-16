@@ -1,3 +1,7 @@
+
+
+
+// homepage -- map
 if (navigator.geolocation) {
   console.log('Geolocation is supported!');
 }
@@ -16,7 +20,7 @@ window.onload = function() {
 
     let map = new google.maps.Map(document.getElementById('map'), {
       center: myLocation,
-      zoom: 17
+      zoom: 16
     });
     console.log('Here')
 
