@@ -294,6 +294,18 @@ window.onload = function() {
     });
     console.log('Here')
 
+    for (let i = 0; i < businesses.length; i++) {
+      let marker = new google.maps.Marker({
+        position: {lat: businesses[i].latitude, lng: businesses[i].longitude},
+        map: map,
+        title: 'A marker'
+      });
+
+      marker.setMap(map);
+    }
+
+    
+    /*
     var marker = new google.maps.Marker({
       position: myLocation,
       map: map,
@@ -309,7 +321,7 @@ window.onload = function() {
       title: '📍'
     });
 
-    marker.setMap(map);
+    marker.setMap(map);*/
     console.log(myLocation)
 
   };
