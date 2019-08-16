@@ -50,27 +50,27 @@
   <br/>
   <div class="container">
     <div class="row center">
+
       <div id="map" style="width: 100%; height: 600px;">
-
-        <script>
-            var map;
-            function initMap() {
-              map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: -34.397, lng: 150.644},
-                zoom: 8
-              });
-              console.log('Here')
-            }
-          </script>
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDruMvSiWaX_UgV4j4N5qg3c4S9Yn8-Vsg&callback=initMap"
-        type="text/javascript" async defer></script>
-
+        <h3>Please allow access to location to view shops</h3>
       </div>
     </div>
   </div>
 
+  <!--<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+        console.log('Here')
+      }
+    </script>-->
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDruMvSiWaX_UgV4j4N5qg3c4S9Yn8-Vsg&callback=initMap"
+  type="text/javascript" async defer></script>
+  <script src = "main.js"></script>
 
 
 
