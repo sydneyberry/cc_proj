@@ -30,6 +30,15 @@ window.onload = function() {
       title: 'Hello World!'
     });
 
+    // Another Marker
+    var loc2 = {lat: 40.724616, lng: -74.0014076}
+
+    var m2 = new google.maps.Marker({
+      position: loc2,
+      map: map,
+      title: '📍'
+    });
+
     marker.setMap(map);
     console.log(myLocation)
 
