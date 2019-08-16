@@ -11,14 +11,24 @@ window.onload = function() {
     startPos = position;
     let lat  = startPos.coords.latitude;
     let long =  startPos.coords.longitude;
-    console.log(lat)
-    console.log(long)
+    let myLocation = {lat: lat, lng: long};
+
 
     let map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: lat, lng: long},
+      center: myLocation,
       zoom: 17
     });
     console.log('Here')
+
+    var marker = new google.maps.Marker({
+      position: myLocation,
+      map: map,
+      title: 'Hello World!'
+    });
+
+    marker.setMap(map);
+    console.log(myLocation)
+
   };
   navigator.geolocation.getCurrentPosition(geoSuccess);
 };
